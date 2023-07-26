@@ -1,0 +1,78 @@
+# Linux only.
+
+# This helps colorize the shell's prompts, which makes it easier to differentiate between a command,
+# its output, and the next command. The codes become difficult to read with all the mandatory escaping,
+# so they are defined here as variables. See sh.local for how to apply.
+
+# Reset
+readonly SCC_Color_Off='\e[0m'       # Text Reset
+
+# Regular Colors
+readonly SCC_Black='\e[0;30m'        # Black
+readonly SCC_Red='\e[0;31m'          # Red
+readonly SCC_Green='\e[0;32m'        # Green
+readonly SCC_Yellow='\e[0;33m'       # Yellow
+readonly SCC_Blue='\e[0;34m'         # Blue
+readonly SCC_Purple='\e[0;35m'       # Purple
+readonly SCC_Cyan='\e[0;36m'         # Cyan
+readonly SCC_White='\e[0;37m'        # White
+
+# Bold
+readonly SCC_BBlack='\e[1;30m'       # Black
+readonly SCC_BRed='\e[1;31m'         # Red
+readonly SCC_BGreen='\e[1;32m'       # Green
+readonly SCC_BYellow='\e[1;33m'      # Yellow
+readonly SCC_BBlue='\e[1;34m'        # Blue
+readonly SCC_BPurple='\e[1;35m'      # Purple
+readonly SCC_BCyan='\e[1;36m'        # Cyan
+readonly SCC_BWhite='\e[1;37m'       # White
+
+# Underline
+readonly SCC_UBlack='\e[4;30m'       # Black
+readonly SCC_URed='\e[4;31m'         # Red
+readonly SCC_UGreen='\e[4;32m'       # Green
+readonly SCC_UYellow='\e[4;33m'      # Yellow
+readonly SCC_UBlue='\e[4;34m'        # Blue
+readonly SCC_UPurple='\e[4;35m'      # Purple
+readonly SCC_UCyan='\e[4;36m'        # Cyan
+readonly SCC_UWhite='\e[4;37m'       # White
+
+# Background
+readonly SCC_BG_Black='\e[40m'       # Black
+readonly SCC_BG_Red='\e[41m'         # Red
+readonly SCC_BG_Green='\e[42m'       # Green
+readonly SCC_BG_Yellow='\e[43m'      # Yellow
+readonly SCC_BG_Blue='\e[44m'        # Blue
+readonly SCC_BG_Purple='\e[45m'      # Purple
+readonly SCC_BG_Cyan='\e[46m'        # Cyan
+readonly SCC_BG_White='\e[47m'       # White
+
+# High Intensty
+readonly SCC_IBlack='\e[0;90m'       # Black
+readonly SCC_IRed='\e[0;91m'         # Red
+readonly SCC_IGreen='\e[0;92m'       # Green
+readonly SCC_IYellow='\e[0;93m'      # Yellow
+readonly SCC_IBlue='\e[0;94m'        # Blue
+readonly SCC_IPurple='\e[0;95m'      # Purple
+readonly SCC_ICyan='\e[0;96m'        # Cyan
+readonly SCC_IWhite='\e[0;97m'       # White
+
+# Bold High Intensty
+readonly SCC_BIBlack='\e[1;90m'      # Black
+readonly SCC_BIRed='\e[1;91m'        # Red
+readonly SCC_BIGreen='\e[1;92m'      # Green
+readonly SCC_BIYellow='\e[1;93m'     # Yellow
+readonly SCC_BIBlue='\e[1;94m'       # Blue
+readonly SCC_BIPurple='\e[1;95m'     # Purple
+readonly SCC_BICyan='\e[1;96m'       # Cyan
+readonly SCC_BIWhite='\e[1;97m'      # White
+
+# High Intensty backgrounds
+readonly SCC_BG_IBlack='\e[0;100m'   # Black
+readonly SCC_BG_IRed='\e[0;101m'     # Red
+readonly SCC_BG_IGreen='\e[0;102m'   # Green
+readonly SCC_BG_IYellow='\e[0;103m'  # Yellow
+readonly SCC_BG_IBlue='\e[0;104m'    # Blue
+readonly SCC_BG_IPurple='\e[10;95m'  # Purple
+readonly SCC_BG_ICyan='\e[0;106m'    # Cyan
+readonly SCC_BG_IWhite='\e[0;107m'   # White

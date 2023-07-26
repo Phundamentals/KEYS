@@ -1,0 +1,30 @@
+# .bashrc
+
+#
+# --- Global ---
+#
+
+[ -f /etc/bashrc ] && . /etc/bashrc
+
+#
+# --- User ---
+#
+
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
+
+alias ls='ls -AFlNg --group-directories-first --color=auto'
+
+#alias sed='sed -En'
+
+alias diff='diff --report-identical-files --side-by-side --ignore-all-space --ignore-blank-lines --strip-trailing-cr --color=auto'
+
+alias gs='git status --show-stash'
+alias gsi='git status --show-stash --ignored'
+alias gl='git log --abbrev-commit --graph --shortstat'
+alias glo='git log --abbrev-commit --oneline'
+
+alias gls='gpg --list-keys --with-fingerprint --with-keygrip'
+alias glsp='gpg --list-secret-keys --with-fingerprint --with-keygrip'
+alias gpe='gpg --expert --edit-key'

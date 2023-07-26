@@ -1,0 +1,56 @@
+# .bash_profile
+# See https://github.com/Phundamentals/KEYS for some background information.
+
+# Get the aliases and functions
+[ -f ~/.bashrc ] && . ~/.bashrc
+
+#
+# User specific environment and startup programs.
+#
+
+export OPENSSH="/CProgram Files/OpenSSH"
+export PUTTY="/C/Program Files/PuTTY"
+export GNUPG="/C/Program Files (x86)/GnuPG"
+#export GPG4WIN="/C/Program Files/Gpg4win"
+
+# Windows: use GnuPG, PuTTY (and/or OpenSSH-Win) instead of the Git provided applications.
+# More applications outside of the Git distribution will be able to use our keys, this way.
+# So make sure to add them to the start of the path.
+
+#export PATH="${GPG4WIN}/Bin":"${GNUPG}/Bin":"${PUTTY}":"${OPENSSH}":$PATH
+export PATH="${GNUPG}/Bin":"${PUTTY}":"${OPENSSH}":$PATH
+#export GNUPGHOME=<path to GnuPG user storage>
+
+# These can be configured in .gitconfig as well.
+# Just the command.
+#export GIT_SSH=${OPENSSH}/ssh.exe
+# Takes precedence and can have arguments.
+#export GIT_SSH_COMMAND=${OPENSSH}/ssh.exe
+#export GIT_SSH_COMMAND="${PUTTY}/plink.exe" -agent
+
+# Allows gpg-connect-agent to actually execute successfully from Git Bash.
+# The first one might cause problems for applications other than gpg-connect-agent.
+#export MSYS_NO_PATHCONV=1
+alias gpg-connect-agent='MSYS_NO_PATHCONV=1 gpg-connect-agent'
+
+# One of these is needed on Windows, since it doesn't launch automagically.
+# Consider using Task Manager or other means to start GPG agent on login.
+# That works better with IDEs and other tools.
+# Note that Git's SSH agent is not able to connect to gpg-agent's socket.
+# We're using PuTTY's plink as an SSH replacement with Git.
+#gpgconf --launch gpg-agent
+# Or:
+gpg-connect-agent /bye
+# Or, for keys stored on a secondary smartcard that has not been made the default:
+#gpg-connect-agent "scd <key serialno>" "learn --force" /bye
+
+# Let other applications know the path to the socket of GnuPG's SSH agent implementation.
+#export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+
+# Linux.
+#unset SSH_AGENT_PID
+#if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+#        export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+#fi
+#export GPG_TTY=$(TTY)
+#gpg-connect-agent updatestartuptty /bye >/dev/null

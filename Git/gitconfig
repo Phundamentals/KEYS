@@ -1,0 +1,41 @@
+[user]
+	name = 
+	email = 
+	# Do this for signing with an SSH key:
+	#signingKey = C:/Users/.../.ssh/signing-key-id
+	# But this for GPG signing:
+	# Use the exclamation mark when signing with a GPG subkey, as recommended.
+	#signingKey = <id>!
+[core]
+	autocrlf = true
+	excludesfile = C:/Users/.../.gitignore-global
+	#sshCommand = C:/Tools/OpenSSH/ssh.exe
+	sshCommand = C:/Tools/PuTTY/plink.exe -agent
+[gpg]
+	# Do this for SSH signing:
+	#format = ssh
+	# But this for GPG signing:
+	program = C:/Program Files (x86)/GnuPG/bin/gpg.exe
+	minTrustLevel = fully
+[gpg "ssh"]
+	# Do this for SSH signing:
+	#echo "$(git config --global --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_rsa.pub)" >> ~/.ssh/allowed_signers
+	allowedSignersFile = C:/Users/.../.ssh/allowed_signers
+[commit]
+	# Do this for both:
+	gpgSign = true
+[status]
+	submoduleSummary = true
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[transfer]
+	fsckobjects = true
+[fetch]
+	fsckobjects = true
+[receive]
+	fsckObjects = true

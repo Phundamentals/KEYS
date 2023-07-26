@@ -1,0 +1,35 @@
+# Linux only.
+
+# Add any required envvar overrides to this file, it is sourced from /etc/profile
+
+umask -S u=rwx,g=rx,o=rx > /dev/null 2>&1
+
+#
+# Set up a colored shell prompt.
+#
+
+. /etc/profile.d/shell-color-codes
+if [ $UID -eq 0 ]; then
+	export PS1="\n\[$SCC_BRed\][\[$SCC_Green\]\u\[$SCC_BCyan\]@\[$SCC_Green\]\h \[$SCC_Purple\]\W\[$SCC_BRed\]]\[$SCC_Color_Off\] "
+else
+	export PS1="\n\[$SCC_Cyan\][\[$SCC_Green\]\u\[$SCC_Cyan\]@\[$SCC_Green\]\h \[$SCC_Purple\]\W\[$SCC_Cyan\]]\[$SCC_Color_Off\] "
+fi
+
+#
+# More aliases and variables.
+#
+
+alias ls='ls -FlNh --group-directories-first --color=auto'
+
+#
+# Variables.
+#
+
+export HISTSIZE=2000
+
+# This messes up Git's ANSI colored output
+#export PAGER=/usr/bin/less
+#export LESS="-F"
+
+#export VISUAL=/usr/bin/mcedit
+#export EDITOR=$VISUAL

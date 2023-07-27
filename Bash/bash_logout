@@ -1,0 +1,9 @@
+# ~/.bash_logout
+
+# Flush passphrase cache.
+gpgconf --reload gpg-agent
+
+[ -f ~/.mysql_history ] && rm -f ~/.mysql_history
+[ -f ~/.psql_history ] && rm -f ~/.psql_history
+
+clear

@@ -25,6 +25,6 @@ alias gsi='git status --show-stash --ignored'
 alias gl='git log --abbrev-commit --graph --shortstat'
 alias glo='git log --abbrev-commit --oneline'
 
-alias gls='gpg --list-keys --with-fingerprint --with-keygrip'
-alias glsp='gpg --list-secret-keys --with-fingerprint --with-keygrip'
+alias gls='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-keys --with-fingerprint --with-keygrip'
+alias glsp='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-secret-keys --with-fingerprint --with-keygrip'
 alias gpe='gpg --expert --edit-key'

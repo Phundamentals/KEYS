@@ -24,6 +24,7 @@ alias gs='git status --show-stash'
 alias gsi='git status --show-stash --ignored'
 alias gl='git log --abbrev-commit --graph --shortstat'
 alias glo='git log --abbrev-commit --oneline'
+alias gc.='git add . && git commit -m'
 
 alias gls='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-keys --with-fingerprint --with-keygrip'
 alias glsp='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-secret-keys --with-fingerprint --with-keygrip'

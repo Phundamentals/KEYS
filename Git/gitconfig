@@ -8,6 +8,8 @@
 	#signingKey = <id>!
 [core]
 	autocrlf = true
+	symlinks = false
+	fscache = true
 	excludesfile = C:/Users/.../.gitignore-global
 	#sshCommand = C:/Tools/OpenSSH/ssh.exe
 	sshCommand = C:/Tools/PuTTY/plink.exe -agent

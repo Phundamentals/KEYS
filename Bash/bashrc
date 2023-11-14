@@ -14,7 +14,7 @@
 #alias cp='cp -i'
 #alias mv='mv -i'
 
-alias ls='ls -AFlNg --group-directories-first --color=auto'
+alias ls='ls -AFlNh --group-directories-first --color=auto'
 
 #alias sed='sed -En'
 

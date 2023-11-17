@@ -27,6 +27,7 @@ alias glo='git log --abbrev-commit --oneline'
 alias gc.='git add . && git commit -m'
 alias gr='git rebase --committer-date-is-author-date'
 
+alias gpga='gpgconf -K gpg-agent && gpgconf --launch gpg-agent'
 alias gls='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-keys --with-fingerprint --with-keygrip'
 alias glsp='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-secret-keys --with-fingerprint --with-keygrip'
 alias gpe='gpg --expert --edit-key'

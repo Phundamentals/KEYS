@@ -19,6 +19,7 @@ alias ls='ls -AFlNh --group-directories-first --color=auto'
 #alias sed='sed -En'
 
 alias diff='diff --report-identical-files --side-by-side --ignore-all-space --ignore-blank-lines --strip-trailing-cr --color=auto'
+alias k3='~/AppData/Local/KDiff3/bin/kdiff3.exe'
 
 alias gs='git status --show-stash'
 alias gsi='git status --show-stash --ignored'

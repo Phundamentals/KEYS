@@ -41,3 +41,17 @@
 	fsckobjects = true
 [receive]
 	fsckObjects = true
+[diff]
+	tool = kdiff3
+[difftool]
+	prompt = false
+[difftool "kdiff3"]
+	cmd = ~/AppData/Local/KDiff3/bin/kdiff3.exe "$LOCAL" "$REMOTE"
+[merge]
+	tool = kdiff3
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[mergetool "kdiff3"]
+	cmd = ~/AppData/Local/KDiff3/bin/kdiff3.exe -m "$LOCAL" "$REMOTE" -o "$MERGED"

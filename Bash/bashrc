@@ -26,6 +26,7 @@ alias gsi='git status --show-stash --ignored'
 alias gl='git log --abbrev-commit --graph --shortstat'
 alias glo='git log --abbrev-commit --oneline'
 alias gc.='git add . && git commit -m'
+alias gca.='git add . && git commit --amend'
 alias gpf='git push -f --force-with-lease'
 alias gr='git rebase --committer-date-is-author-date'
 

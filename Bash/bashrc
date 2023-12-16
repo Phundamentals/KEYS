@@ -22,7 +22,7 @@ alias diff='diff --report-identical-files --side-by-side --ignore-all-space --ig
 #alias k3='~/AppData/Local/KDiff3/bin/kdiff3.exe'
 
 alias gs='git status --show-stash'
-alias gsi='gsi --ignored'
+alias gsi='gs --ignored'
 alias gl='git log --abbrev-commit --graph --shortstat'
 alias glo='git log --abbrev-commit --graph --oneline'
 alias gd='git diff'

@@ -19,16 +19,29 @@ alias ls='ls -AFlNh --group-directories-first --color=auto'
 #alias sed='sed -En'
 
 alias diff='diff --report-identical-files --side-by-side --ignore-all-space --ignore-blank-lines --strip-trailing-cr --color=auto'
-alias k3='~/AppData/Local/KDiff3/bin/kdiff3.exe'
+#alias k3='~/AppData/Local/KDiff3/bin/kdiff3.exe'
 
 alias gs='git status --show-stash'
-alias gsi='git status --show-stash --ignored'
+alias gsi='gsi --ignored'
 alias gl='git log --abbrev-commit --graph --shortstat'
 alias glo='git log --abbrev-commit --graph --oneline'
-alias gc.='git add . && git commit -m'
-alias gca.='git add . && git commit --amend'
-alias gpf='git push -f --force-with-lease'
+alias gd='git diff'
+alias gb='git branch'
+
+alias ga.='git add .'
+alias gc='git commit'
+alias gc.='ga. && gc -m'
+alias gca.='ga. && gc --amend'
 alias gr='git rebase --committer-date-is-author-date'
+alias grc='ga. && git rebase --continue'
+
+alias gp="git push"
+alias gpf='gp -f --force-with-lease'
+
+alias gsw='git switch'
+alias gsw-m='gsw main'
+alias gsw-d='gsw develop'
+alias gsw-l='gsw local-changes'
 
 alias gpga='gpgconf -K gpg-agent && gpgconf --launch gpg-agent'
 alias gls='gpg-connect-agent -q "keyinfo --list" /bye && gpg --list-keys --with-fingerprint --with-keygrip'

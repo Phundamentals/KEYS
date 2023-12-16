@@ -2,7 +2,7 @@
 	name = 
 	email = 
 	# Do this for signing with an SSH key:
-	#signingKey = C:/Users/.../.ssh/signing-key-id
+	#signingKey = ~/.ssh/<signing-key>
 	# But this for GPG signing:
 	# Use the exclamation mark when signing with a GPG subkey, as recommended.
 	#signingKey = <id>!
@@ -10,7 +10,7 @@
 	autocrlf = true
 	symlinks = false
 	fscache = true
-	excludesfile = C:/Users/.../.gitignore-global
+	excludesfile = ~/.gitignore-global
 	#sshCommand = C:/Tools/OpenSSH/ssh.exe
 	sshCommand = C:/Tools/PuTTY/plink.exe -agent
 [gpg]
@@ -22,7 +22,7 @@
 [gpg "ssh"]
 	# Do this for SSH signing:
 	#echo "$(git config --global --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_rsa.pub)" >> ~/.ssh/allowed_signers
-	allowedSignersFile = C:/Users/.../.ssh/allowed_signers
+	allowedSignersFile = ~/.ssh/allowed_signers
 [commit]
 	# Do this for both:
 	gpgSign = true

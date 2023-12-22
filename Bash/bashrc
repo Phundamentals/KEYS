@@ -89,6 +89,12 @@ alias gf-ls='gfs list'
 alias gf-ss='gfs start'
 
 #
+# .Net
+#
+
+alias dnclean='dotnet clean -v minimal && dotnet restore && dotnet build --no-restore --no-incremental'
+
+#
 # Other
 #
 

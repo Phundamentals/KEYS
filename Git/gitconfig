@@ -26,6 +26,9 @@
 [commit]
 	# Do this for both:
 	gpgSign = true
+[tag]
+	# Do this for both:
+	gpgSign = true
 [status]
 	submoduleSummary = true
 [init]

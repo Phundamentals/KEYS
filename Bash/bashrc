@@ -93,6 +93,9 @@ alias gf-ss='gfs start'
 #
 
 alias dnclean='dotnet clean -v minimal && dotnet restore && dotnet build --no-restore --no-incremental'
+alias gitversion='~/.dotnet/tools/dotnet-gitversion'
+alias gv='gitversion'
+#alias nbgv='~/.dotnet/tools/nbgv'
 
 #
 # Other

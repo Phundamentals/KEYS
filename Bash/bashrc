@@ -49,6 +49,7 @@ alias gp="git push"
 alias gpf='gp -f --force-with-lease'
 
 alias gsw='git switch'
+alias gsw-='gsw -'
 alias gsw-m='gsw main'
 alias gsw-d='gsw develop'
 alias gsw-l='gsw local-changes'

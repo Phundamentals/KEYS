@@ -44,7 +44,8 @@ alias gc='git commit'
 alias gc.='ga. && gc -m'
 alias gca.='ga. && gc --amend'
 alias gr='git rebase --committer-date-is-author-date'
-alias grc='ga. && git rebase --continue'
+alias grc='git rebase --continue'
+alias grc.='ga. && grc'
 
 alias gp="git push"
 alias gpf='gp -f --force-with-lease'

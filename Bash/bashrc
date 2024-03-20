@@ -39,6 +39,8 @@ alias gd='git diff'
 alias gdd='gd --compact-summary'
 alias gb='git branch'
 
+#alias gic='gc --allow-empty -m "Initial commit"'
+
 alias ga.='git add .'
 alias gc='git commit'
 alias gc.='ga. && gc -m'

@@ -47,6 +47,7 @@ alias ga='git add'
 alias ga.='ga .'
 alias gc='git commit'
 alias gc.='ga. && gc -m'
+alias gac='gitAddCommit'
 alias gca.='ga. && gc --amend'
 alias gr='git rebase --committer-date-is-author-date'
 alias grc='git rebase --continue'
@@ -60,6 +61,11 @@ alias gsw-='gsw -'
 alias gsw-m='gsw main'
 alias gsw-d='gsw develop'
 alias gsw-l='gsw local-changes'
+
+gitAddCommit() {
+	git add "${@:1:$#-1}";
+	git commit -m "${@:$#}";
+}
 
 #
 # Git Flow

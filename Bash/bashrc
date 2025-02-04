@@ -71,37 +71,36 @@ gitAddCommit() {
 # Git Flow
 #
 
-alias gf='git flow'
-alias gff='gf feature'
-alias gfb='gf bugfix'
-alias gfh='gf hotfix'
-alias gfr='gf release'
-alias gfs='gf support'
-alias gfv='gf version'
+#alias gf='git flow'
+#alias gff='gf feature'
+#alias gfb='gf bugfix'
+#alias gfh='gf hotfix'
+#alias gfr='gf release'
+#alias gfs='gf support'
+#alias gfv='gf version'
 
-alias gf-lf='gff list'
-alias gf-sf='gff start'
-alias gf-ff='gff finish'
-alias gf-cf='gff checkout'
-alias gf-rf='gff rebase'
+#alias gf-lf='gff list'
+#alias gf-sf='gff start'
+#alias gf-ff='gff finish'
+#alias gf-cf='gff checkout'
+#alias gf-rf='gff rebase'
 
-alias gf-lb='gfb list'
-alias gf-sb='gfb start'
-alias gf-fb='gfb finish'
-alias gf-cb='gfb checkout'
-alias gf-rb='gfb rebase'
+#alias gf-lb='gfb list'
+#alias gf-sb='gfb start'
+#alias gf-fb='gfb finish'
+#alias gf-cb='gfb checkout'
+#alias gf-rb='gfb rebase'
 
-alias gf-lh='gfh list'
-alias gf-sh='gfh start'
-alias gf-fh='gfh finish'
+#alias gf-lh='gfh list'
+#alias gf-sh='gfh start'
+#alias gf-fh='gfh finish'
 
-alias gf-lr='gfr list'
-alias gf-sr='gfr start'
-alias gf-fr='gfr finish'
+#alias gf-lr='gfr list'
+#alias gf-sr='gfr start'
+#alias gf-fr='gfr finish'
 
-alias gf-ls='gfs list'
-alias gf-ss='gfs start'
-
+#alias gf-ls='gfs list'
+#alias gf-ss='gfs start'
 #
 # .Net
 #

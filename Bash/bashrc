@@ -10,6 +10,8 @@
 # --- User ---
 #
 
+#eval "$(oh-my-posh init bash --config /XXX.json)"
+
 #alias rm='rm -i'
 #alias cp='cp -i'
 #alias mv='mv -i'

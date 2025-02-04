@@ -43,7 +43,8 @@ alias gb='git branch'
 
 #alias gic='gc --allow-empty -m "Initial commit"'
 
-alias ga.='git add .'
+alias ga='git add'
+alias ga.='ga .'
 alias gc='git commit'
 alias gc.='ga. && gc -m'
 alias gca.='ga. && gc --amend'
